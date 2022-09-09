@@ -15,11 +15,11 @@ int main(void)
 
 	while (number1 < 10)
 	{
-		putchar(number1 % 10 + '0');
 		while (number2 == number1 || number1 > number2)
 		{
 			number2++;
 		}
+		putchar(number1 % 10 + '0');
 		putchar(number2 % 10 + '0');
 		number2++;
 		if (number2 > 9)
