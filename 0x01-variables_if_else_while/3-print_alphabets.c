@@ -15,12 +15,12 @@ int main(void)
 
 	while (capsLetter <= 'Z')
 	{
-		putchar('%c', capsLetter);
+		putchar(capsLetter);
 		capsLetter++;
 	}
 	while (lowLetter <= 'z')
 	{
-		putchar('%c', lowLetter);
+		putchar(lowLetter);
 		lowLetter++;
 	}
 	putchar('\n');
