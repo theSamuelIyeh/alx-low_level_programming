@@ -13,7 +13,7 @@ int main(void)
 	int number1 = 0;
 	int number2 = 0;
 
-	while (number1 < 10)
+	while (number1 < 9)
 	{
 		while (number2 == number1 || number1 > number2)
 		{
@@ -27,8 +27,13 @@ int main(void)
 			number2 = 1;
 			number1++;
 		}
-		putchar(',');
-		putchar(' ');
+		if (number1 == 8 && number2 == 9)
+		{}
+		else
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
