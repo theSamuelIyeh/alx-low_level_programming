@@ -20,13 +20,13 @@ int main(void)
 		{
 			number2++;
 		}
+		putchar(number2 % 10 + '0');
+		number2++;
 		if (number2 > 9)
 		{
 			number2 = 0;
 			number1++;
 		}
-		putchar(number2 % 10 + '0');
-		number2++;
 		if (number1 != 8 && number2 != 9)
 		{
 			putchar(',');
