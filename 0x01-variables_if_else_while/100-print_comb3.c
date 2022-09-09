@@ -24,7 +24,7 @@ int main(void)
 		number2++;
 		if (number2 > 9)
 		{
-			number2 = 0;
+			number2 = 1;
 			number1++;
 		}
 		if (number1 != 8 && number2 != 9)
