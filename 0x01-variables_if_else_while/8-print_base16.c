@@ -13,7 +13,7 @@ int main(void)
 
 	while (number < 16)
 	{
-		putchar(number % 16 + '16');
+		putchar(number % 16 + '8');
 		number++;
 	}
 	putchar('\n');
