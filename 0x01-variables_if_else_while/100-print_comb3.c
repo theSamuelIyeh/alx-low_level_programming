@@ -16,7 +16,7 @@ int main(void)
 	while (number1 < 10)
 	{
 		putchar(number1 % 10 + '0');
-		if (number2 == number1 || number1 > number2)
+		while (number2 == number1 || number1 > number2)
 		{
 			number2++;
 		}
