@@ -14,6 +14,7 @@ int main(void)
 	while (number < 16)
 	{
 		putchar(number % 16 + '0');
+		number++;
 	}
 	putchar('\n');
 	return (0);
