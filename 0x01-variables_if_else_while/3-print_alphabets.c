@@ -13,15 +13,15 @@ int main(void)
 	char capsLetter = 'A';
 	char lowLetter = 'a';
 
-	while (capsLetter <= 'Z')
-	{
-		putchar(capsLetter);
-		capsLetter++;
-	}
 	while (lowLetter <= 'z')
 	{
 		putchar(lowLetter);
 		lowLetter++;
+	}
+	while (capsLetter <= 'Z')
+	{
+		putchar(capsLetter);
+		capsLetter++;
 	}
 	putchar('\n');
 	return (0);
