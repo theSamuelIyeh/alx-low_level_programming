@@ -16,7 +16,8 @@ int main(void)
 		if (letter == 'q' || letter == 'e')
 		{
 			letter++;
-		} else {
+		} else
+		{
 			putchar(letter);
 			letter++;
 		}
