@@ -27,7 +27,7 @@ int main(void)
 			number2 = 1;
 			number1++;
 		}
-		if (!(number1 == 8 && number2 == 9))
+		if (!(number1 == 9 && number2 == 1))
 		{
 			putchar(',');
 			putchar(' ');
