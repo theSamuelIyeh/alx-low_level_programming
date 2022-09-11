@@ -21,7 +21,7 @@ int main(void)
 			number3 = 0;
 			while (number3 < 10)
 			{
-				while (!(number1 >= number3 || number2 >= number3 || number1 >= number2))
+				if (!(number1 >= number3 || number2 >= number3 || number1 >= number2))
 				{
 					putchar(number1 % 10 + '0');
 					putchar(number2 % 10 + '0');
@@ -35,7 +35,6 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
-					number3++;
 				}
 				number3++;
 			}
