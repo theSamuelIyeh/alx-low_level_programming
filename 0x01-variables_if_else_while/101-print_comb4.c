@@ -45,8 +45,8 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
+		number3++;
 	}
-	number3++;
 	putchar('\n');
 	return (0);
 }
