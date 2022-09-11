@@ -22,7 +22,7 @@ int main(void)
 		}
 		if (number2 > 9)
 		{
-			number 2 = 1;
+			number2 = 1;
 			number1++;
 		}
 		while (number2 >= number3)
