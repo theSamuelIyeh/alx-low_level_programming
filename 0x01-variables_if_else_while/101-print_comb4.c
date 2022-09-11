@@ -15,6 +15,10 @@ int main(void)
 
 	while (number1 < 7)
 	{
+		while (number1 == number3 || number1 > number3)
+		{
+			number3 = number2 + 1;
+		}
 		while (number2 == number3 || number2 > number3)
 		{
 			number3++;
@@ -22,10 +26,6 @@ int main(void)
 		while (number1 == number2 || number1 > number2)
 		{
 			number2++;
-		}
-		while (number1 == number3 || number1 > number3)
-		{
-			number3 = number2 + 1;
 		}
 		if (number3 > 9)
 		{
