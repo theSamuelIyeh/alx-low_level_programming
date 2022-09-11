@@ -13,39 +13,34 @@ int main(void)
 	int number2 = 0;
 	int number3 = 0;
 
-	while (number1 < 7)
+	while (number1 < 10)
 	{
-		while (number2 >= number3)
+		number2 = 0;
+		while (number2 < 10)
 		{
-			number3++;
-		}
-		while (number1 >= number2)
-		{
+			number3 = 0;
+			while (number3 < 10)
+			{
+				while (!(a >= c || b >= c || a >= b))
+				{
+					putchar(number1 % 10 + '0');
+					putchar(number2 % 10 + '0');
+					putchar(number3 % 10 + '0');
+					if (number1 == 7 && number2 == 8 && number3 == 9)
+					{
+						break;
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+				number3++;
+			}
 			number2++;
 		}
-		while (number2 >= number3)
-		{
-			number3++;
-		}
-		if (number3 > 9)
-		{
-			number3 = 1;
-			number2++;
-		}
-		if (number2 > 9)
-		{
-			number2 = 1;
-			number1++;
-		}
-		putchar(number1 % 10 + '0');
-		putchar(number2 % 10 + '0');
-		putchar(number3 % 10 + '0');
-		if (!(number1 == 7 && number2 == 8 && number3 == 9))
-		{
-			putchar(',');
-			putchar(' ');
-		}
-		number3++;
+		number1++;
 	}
 	putchar('\n');
 	return (0);
