@@ -28,27 +28,25 @@ int main(void)
 			}
 		}
 	}
-		if (number3 > 9)
-		{
-			number3 = 1;
-			number2++;
-		}
-		if (number2 > 9)
-		{
-			number2 = 1;
-			number1++;
-		}
-		putchar(number1 % 10 + '0');
-		putchar(number2 % 10 + '0');
-		putchar(number3 % 10 + '0');
-		
-		if (!(number1 == 7 && number2 == 8 && number3 == 9))
-		{
-			putchar(',');
-			putchar(' ');
-		}
-		number3++;
+	if (number3 > 9)
+	{
+		number3 = 1;
+		number2++;
 	}
+	if (number2 > 9)
+	{
+		number2 = 1;
+		number1++;
+	}
+	putchar(number1 % 10 + '0');
+	putchar(number2 % 10 + '0');
+	putchar(number3 % 10 + '0');
+	if (!(number1 == 7 && number2 == 8 && number3 == 9))
+	{
+		putchar(',');
+		putchar(' ');
+	}
+	number3++;
 	putchar('\n');
 	return (0);
 }
