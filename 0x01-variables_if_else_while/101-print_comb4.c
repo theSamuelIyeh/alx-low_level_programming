@@ -37,6 +37,7 @@ int main(void)
 					}
 					number3++;
 				}
+				number3++;
 			}
 			number2++;
 		}
