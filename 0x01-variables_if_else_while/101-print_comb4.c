@@ -35,8 +35,8 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
+					number3++;
 				}
-				number3++;
 			}
 			number2++;
 		}
