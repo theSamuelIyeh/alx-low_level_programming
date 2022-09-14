@@ -18,7 +18,7 @@ int print_sign(int n)
 	{
 		ret = 1;
 	}
-	else if (n = 0)
+	else if (n == 0)
 	{
 		ret = 0;
 	}
