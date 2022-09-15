@@ -20,41 +20,32 @@ void print_times_table(int n)
 		while (a <= n)
 		{
 			int b = 0;
-			int c = 0;
+
 			while (b <= n)
 			{
-				if (c / 10 == 0)
+				if (b / 10 == 0 && b == 0)
+				{}
+				else if (b / 10 == 0 && b != 0)
 				{
-					if (b == 0)
-					{}
-					else
-					{
-						printf("  ");
-					}
+					_putchar(' ');
+					_putchar(' ');
 				}
-				else
+				else if (b / 10 != 0 && b / 10 > 9)
 				{
-					if (c / 10 > 9)
-					{
-						printf("%d%d", (c / 10) / 10, (c / 10) / 10);
-					}
-					else
-					{
-						_putchar(' ');
-						_putchar(c / 10 + '0');
-					}
+					_putchar((b / 10) / 10 + '0');
+					_putchar((b / 10) % 10 + '0');
 				}
-				_putchar(c % 10 + '0');
+				else if (b / 10 != 0 && b / 10 < 9)
+				{
+					_putchar(' ');
+					_putchar(b / 10 + '0');
+				}
+				_putchar(b % 10 + '0');
 				if (b == n)
-				{
 					break;
-				}
-				else
-				{
-					printf(", ");
-				}
-				c += a;
-				b++;
+				_putchar(',');
+				_putchar(' ');
+				b += a;
 			}
 			_putchar('\n');
 			a++;
