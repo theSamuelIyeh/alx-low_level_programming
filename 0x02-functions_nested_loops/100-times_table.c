@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_times_table - prints times table of a number
@@ -18,8 +19,8 @@ void print_times_table(int n)
 	{
 		for (a = 0; a <= n; a++)
 		{
-			b = 0;
-			c = 0;
+			int b = 0;
+			int c = 0;
 			for (b = 0; b <= n; b++)
 			{
 				if (c / 10 == 0)
