@@ -11,18 +11,16 @@
 void print_times_table(int n)
 {
 	int a = 0;
-	int b = 0;
-	int c = 0;
 
 	if (n > 15 || n < 0)
 	{}
 	else
 	{
-		while (a <= n)
+		for (a = 0; a <= n; a++)
 		{
 			b = 0;
 			c = 0;
-			while (b <= n)
+			for (b = 0; b <= n; b++)
 			{
 				if (c / 10 == 0)
 				{
@@ -30,16 +28,14 @@ void print_times_table(int n)
 					{}
 					else
 					{
-						_putchar(' ');
-						_putchar(' ');
+						printf("  ");
 					}
 				}
 				else
 				{
 					if (c / 10 > 9)
 					{
-						_putchar((c / 10) / 10 + '0');
-						_putchar((c / 10) % 10 + '0');
+						printf("%d%d", (c / 10) / 10, (c / 10) / 10);
 					}
 					else
 					{
@@ -54,14 +50,11 @@ void print_times_table(int n)
 				}
 				else
 				{
-					_putchar(',');
-					_putchar(' ');
+					printf(", ");
 				}
 				c += a;
-				b++;
 			}
 			_putchar('\n');
-			a++;
 		}
 	}
 }
