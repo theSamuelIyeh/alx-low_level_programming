@@ -17,11 +17,11 @@ void print_times_table(int n)
 	{}
 	else
 	{
-		for (a = 0; a <= n; a++)
+		while (a <= n)
 		{
 			int b = 0;
 			int c = 0;
-			for (b = 0; b <= n; b++)
+			while (b <= n)
 			{
 				if (c / 10 == 0)
 				{
@@ -54,8 +54,10 @@ void print_times_table(int n)
 					printf(", ");
 				}
 				c += a;
+				b++;
 			}
 			_putchar('\n');
+			a++;
 		}
 	}
 }
