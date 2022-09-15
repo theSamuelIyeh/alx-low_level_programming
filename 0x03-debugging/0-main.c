@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * mian - test whether the function positive_or_negative
+ * mian - entry point
+ *
+ * Description: tets whether the function positive_or_negative
  * gives the correct output
  *
  * Return: 0
