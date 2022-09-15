@@ -14,11 +14,11 @@ void print_times_table(int n)
 	int b = 0;
 	int c = 0;
 
-	while (a < n)
+	while (a <= n)
 	{
 		b = 0;
 		c = 0;
-		while (b < n)
+		while (b <= n)
 		{
 			if (c / 10 == 0)
 			{
