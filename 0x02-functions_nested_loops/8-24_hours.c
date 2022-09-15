@@ -8,7 +8,8 @@
  */
 void jack_bauer(void)
 {
-	int first, second = 0;
+	int first = 0;
+	int second = 0;
 
 	while (first < 24)
 	{
