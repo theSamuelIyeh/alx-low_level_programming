@@ -27,11 +27,20 @@ void print_times_table(int n)
 				else
 				{
 					_putchar(' ');
+					_putchar(' ');
 				}
 			}
 			else
 			{
-				_putchar(c / 10 + '0');
+				if (c > 9)
+				{
+					_putchar((c / 10) / 10 + '0');
+					_putchar((c / 10) % 10 + '0');
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar(c / 10 + '0');
 			}
 			_putchar(c % 10 + '0');
 			if (b == n)
@@ -41,7 +50,6 @@ void print_times_table(int n)
 			else
 			{
 				_putchar(',');
-				_putchar(' ');
 				_putchar(' ');
 			}
 			c += a;
