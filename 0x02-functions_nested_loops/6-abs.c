@@ -9,12 +9,14 @@
  */
 int _abs(int c)
 {
+	int ret;
+
 	if (c > 0 || c == 0)
 	{
-		return (c);
+		ret = c;
 	}
 	else if (c < 0)
 	{
-		return (c * -1);
+		ret = c * -1;
 	}
 }
