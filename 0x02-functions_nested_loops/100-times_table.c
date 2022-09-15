@@ -22,7 +22,7 @@ void print_times_table(int n)
 			int b = 0;
 			int c = 0;
 
-			for (; c <= n; b++)
+			for (; b <= n; b++)
 			{
 				if (c / 10 == 0 && c == 0)
 				{}
