@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * mian - entry point
+ *i main - entry point
  *
  * Description: tets whether the function positive_or_negative
  * gives the correct output
