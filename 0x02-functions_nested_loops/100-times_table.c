@@ -17,38 +17,38 @@ void print_times_table(int n)
 	{}
 	else
 	{
-		while (a <= n)
+		for (; a <= n; a++)
 		{
 			int b = 0;
+			int c = 0;
 
-			while (b <= n)
+			for (; c <= n; b++)
 			{
-				if (b / 10 == 0 && b == 0)
+				if (c / 10 == 0 && c == 0)
 				{}
-				else if (b / 10 == 0 && b != 0)
+				else if (c / 10 == 0 && c != 0)
 				{
 					_putchar(' ');
 					_putchar(' ');
 				}
-				else if (b / 10 != 0 && b / 10 > 9)
+				else if (c / 10 != 0 && c / 10 > 9)
 				{
-					_putchar((b / 10) / 10 + '0');
-					_putchar((b / 10) % 10 + '0');
+					_putchar((c / 10) / 10 + '0');
+					_putchar((c / 10) % 10 + '0');
 				}
-				else if (b / 10 != 0 && b / 10 < 9)
+				else if (c / 10 != 0 && c / 10 < 9)
 				{
 					_putchar(' ');
-					_putchar(b / 10 + '0');
+					_putchar(c / 10 + '0');
 				}
-				_putchar(b % 10 + '0');
+				_putchar(c % 10 + '0');
 				if (b == n)
 					break;
 				_putchar(',');
 				_putchar(' ');
-				b += a;
+				c += a;
 			}
 			_putchar('\n');
-			a++;
 		}
 	}
 }
