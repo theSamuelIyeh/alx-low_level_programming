@@ -24,9 +24,9 @@ void print_times_table(int n)
 
 			for (; b <= n; b++)
 			{
-				if (c / 10 == 0 && c == 0)
+				if (c / 10 == 0 && b == 0)
 				{}
-				else if (c / 10 == 0 && c != 0)
+				else if (c / 10 == 0 && b != 0)
 				{
 					_putchar(' ');
 					_putchar(' ');
