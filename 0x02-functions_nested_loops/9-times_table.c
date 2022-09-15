@@ -18,13 +18,13 @@ void times_table(void)
 		c = 0;
 		while (b < 10)
 		{
-			if (b != 0)
-			{
-				_putchar(' ');
-			}
 			if (c / 10 != 0)
 			{
 				_putchar(c / 10 + '0');
+			}
+			else
+			{
+				_putchar(' ');
 			}
 			_putchar(c % 10 + '0');
 			if (b == 9)
@@ -34,10 +34,7 @@ void times_table(void)
 			else
 			{
 				_putchar(',');
-				if (c / 10 == 0)
-				{
-					_putchar(' ');
-				}
+				_putchar(' ');
 			}
 			c += a;
 			b++;
