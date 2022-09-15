@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * mian - test whether the function positive_or_negative
@@ -12,6 +13,7 @@ int main(void)
 
 	i = 0;
 	positive_or_negative(i);
+	printf("%d is zero", i);
 
 	return (0);
 }
