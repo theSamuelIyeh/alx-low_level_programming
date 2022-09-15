@@ -31,12 +31,12 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(' ');
 				}
-				else if (c / 10 != 0 && c / 10 >= 9)
+				else if (c / 10 != 0 && c / 10 > 9)
 				{
 					_putchar((c / 10) / 10 + '0');
 					_putchar((c / 10) % 10 + '0');
 				}
-				else if (c / 10 != 0 && c / 10 < 9)
+				else if (c / 10 != 0 && c / 10 <= 9)
 				{
 					_putchar(' ');
 					_putchar(c / 10 + '0');
