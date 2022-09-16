@@ -1,13 +1,10 @@
 #include "main.h"
 
 /**
- * main - entry point
- *
- * Description: tets whether the function positive_or_negative
- * gives the correct output
- *
+ * main - tests function that prints if integer is positie or negative
  * Return: 0
  */
+
 int main(void)
 {
 	int i;
