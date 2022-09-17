@@ -12,7 +12,7 @@ int _isupper(int c)
 {
 	int ret;
 
-	if (c >= 65 || c <= 90)
+	if (c >= 65 && c <= 90)
 	{
 		ret = 1;
 	}
