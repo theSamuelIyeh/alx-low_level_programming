@@ -17,7 +17,7 @@ void print_diagonal(int n)
 	{
 		if (n == 0 || n < 0)
 			break;
-		two = 1;
+		two = 0;
 		while (two < one)
 		{
 			_putchar(' ');
