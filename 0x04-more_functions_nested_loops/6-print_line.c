@@ -3,7 +3,7 @@
 /**
  * print_line - draws a straight line on the terminal
  *
- * @c: number of times line is drawn
+ * @n: number of times line is drawn
  *
  * Return: void
  */
