@@ -18,11 +18,12 @@ void print_square(int size)
 		while (height < size)
 		{
 			width = 0;
-			while (width < size)
+			while (width < (size - 1))
 			{
 				_putchar('#');
 				width++;
 			}
+			_putchar('#');
 			if (height == (size - 1))
 			{
 				continue;
