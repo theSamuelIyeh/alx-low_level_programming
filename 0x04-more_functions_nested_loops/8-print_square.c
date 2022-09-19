@@ -24,13 +24,12 @@ void print_square(int size)
 				width++;
 			}
 			_putchar('#');
-			if (height == (size - 1))
-			{
-				continue;
-			}
 			_putchar('\n');
 			height++;
 		}
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
