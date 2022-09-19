@@ -14,8 +14,10 @@ void print_square(int size)
 
 	if (size > 0)
 	{
+		height = 0;
 		while (height < size)
 		{
+			width = 0;
 			while (width < size)
 			{
 				_putchar(35);
