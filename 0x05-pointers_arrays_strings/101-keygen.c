@@ -6,7 +6,7 @@
 /**
  * main - entry point
  *
- * Return password
+ * Return: password
  */
 
 int main(void)
