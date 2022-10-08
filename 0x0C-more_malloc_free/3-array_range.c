@@ -17,7 +17,7 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	number = (mix - min) + 1;
-	ptr = (int *)malloc(number);
+	ptr = malloc(number);
 	if (ptr == NULL)
 		return (NULL);
 	for (i = min; i <= max; i++)
