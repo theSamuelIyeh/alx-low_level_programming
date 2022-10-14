@@ -10,8 +10,8 @@
 
 void print_all(const char * const format, ...)
 {
-	int i;
-	int v;
+	int i = 0;
+	int v = 0;
 	va_list list;
 	char *str;
 
@@ -34,17 +34,18 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(list, double));
 				break;
 			case 's':
-				str = va_arg(list,char *);
+				str = va_arg(list, char *);
 				if (str == NULL)
 					str = "(nil)";
 				printf("%s", str);
 				break;
-			default:
-				continue;
 		}
+		if (format[v] == 's' || format[v] == 'f'
+				|| format[v] == 'c' ||
+				format[v] == 'i' &&
+				v != i - 1)
+			printf("; ");
 		v++;
-		if (v != i - 1)
-			printf("\n");
 	}
 	printf("\n");
 	va_end(list);
