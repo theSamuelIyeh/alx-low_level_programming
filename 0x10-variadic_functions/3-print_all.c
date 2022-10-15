@@ -40,7 +40,7 @@ void print_all(const char * const format, ...)
 				printf("%s", str);
 				break;
 		}
-		if (format[v] == 's' || format[v] == 'f' || format[v] == 'c' || format[v] == 'i' && (v != i - 1))
+		if ((format[v] == 's' || format[v] == 'f' || format[v] == 'c' || format[v] == 'i') && (v != i - 1))
 			printf("; ");
 		v++;
 	}
