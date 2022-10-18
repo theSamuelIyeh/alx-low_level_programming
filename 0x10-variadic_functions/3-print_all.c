@@ -22,8 +22,12 @@ void print_all(const char * const format, ...)
 	{
 		switch (format[i])
 		{
-			case 'c' || 'i':
+			case 'c':
 				printf("%c", va_arg(list, int));
+				c = 1;
+				break;
+			case 'i':
+				prntf("%d", va_arg(list, int));
 				c = 1;
 				break;
 			case 'f':
@@ -38,7 +42,6 @@ void print_all(const char * const format, ...)
 				break;
 			default:
 				c = 0;
-				break;
 		}
 		if (c == 1 && i != j - 1)
 			printf(", ");
