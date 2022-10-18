@@ -18,10 +18,10 @@ void print_all(const char * const format, ...)
 
 	va_start(list, format);
 
-	while (format[j] && format[j] != '\0')
+	while (format != NULL && format[j] != '\0')
 		j++;
 
-	while (format[i] && format[i] != '\0')
+	while (format != NULL && format[i] != '\0')
 	{
 		switch (format[i])
 		{
