@@ -42,6 +42,7 @@ void print_all(const char * const format, ...)
 				break;
 			default:
 				c = 0;
+				break;
 		}
 		if (c == 1 && i != j - 1)
 			printf(", ");
