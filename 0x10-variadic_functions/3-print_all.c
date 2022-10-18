@@ -27,7 +27,7 @@ void print_all(const char * const format, ...)
 				c = 1;
 				break;
 			case 'i':
-				prntf("%d", va_arg(list, int));
+				printf("%d", va_arg(list, int));
 				c = 1;
 				break;
 			case 'f':
