@@ -10,27 +10,20 @@
 
 void print_all(const char * const format, ...)
 {
-	int i = 0;
-	int j = 0;
+	int i = 0, j = 0, c = 0;
 	va_list list;
 	char *string;
-	int c = 0;
 
 	va_start(list, format);
 
 	while (format != NULL && format[j] != '\0')
 		j++;
-
 	while (format != NULL && format[i] != '\0')
 	{
 		switch (format[i])
 		{
-			case 'c':
+			case 'c' || 'i':
 				printf("%c", va_arg(list, int));
-				c = 1;
-				break;
-			case 'i':
-				printf("%d", va_arg(list, int));
 				c = 1;
 				break;
 			case 'f':
@@ -53,4 +46,4 @@ void print_all(const char * const format, ...)
 	}
 	printf("\n");
 	va_end(list);
-}
+
