@@ -19,6 +19,6 @@ int _check_sqrt(int n, int root)
 	if (root * root == n)
 		return (root);
 	newvar = _check_sqrt(n, root - 1);
-	return (newvar);
+	return (newvar)
 
 }
