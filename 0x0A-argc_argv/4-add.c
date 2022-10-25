@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	int sum = 0, i, j, lenstr;
 
 	if (argc <= 1)
-		printf("%d\n", 0)
+		printf("%d\n", 0);
 	else
 	{
 		for (i = 1; i < argc; i++)
