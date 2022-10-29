@@ -18,7 +18,7 @@ void print_binary(unsigned long int n)
 		startbit = bs2;
 	}
 
-	for (; startbit >= 1; startbit /= 2)
+	for (; startbit >= 1; startbit *= 0.5)
 	{
 		if (n >= startbit)
 		{
