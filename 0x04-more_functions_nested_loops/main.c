@@ -1,7 +1,8 @@
 #include "main.h"
+#include <limits.h>
 
 int main(void)
 {
-	print_number(-96);
+	print_number(648);
 	return (0);
 }
