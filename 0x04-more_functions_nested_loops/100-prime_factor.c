@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * main - entry point
@@ -7,14 +8,14 @@
 
 int main(void)
 {
-	long i;
-	long num = 612852475143;
+	long int i;
+	long int num = 612852475143;
 
-	for (i = 2; i < num i++)
+	for (i = 2; i < num; i++)
 	{
 		if (num % i == 0)
 			num /= i;
 	}
-	printf("%li\n", num);
+	printf("%li\n", i - 1);
 	return (0);
 }
