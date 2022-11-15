@@ -8,14 +8,19 @@
 
 int main(void)
 {
-	long int i;
+	long int i = 2;
 	long int num = 612852475143;
 
-	for (i = 2; i < num; i++)
+	while (i < num)
 	{
 		if (num % i == 0)
+		{
 			num /= i;
+		} else
+			i++;
 	}
-	printf("%li\n", i - 1);
+	if (num > 2)
+		i = num;
+	printf("%li\n", i);
 	return (0);
 }
