@@ -18,15 +18,6 @@ char *cap_string(char *c)
 		c[0] = 65 + (c[0] - 97);
 	}
 
-	for (i = 1; c[i] != '\0'; i++)
-	{
-		if (c[i] >= 65 && c[i] <= 90)
-		{
-			increment = c[i] - 65;
-			c[i] = 97 + increment;
-		}	
-	}
-
 	for (i = 0; c[i] != '\0'; i++)
 	{
 		if (c[i] == ' ' || c[i] == '\t' || c[i] == '\n' || c[i] == '.'
