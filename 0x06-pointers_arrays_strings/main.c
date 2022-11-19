@@ -2,9 +2,9 @@
 #include <stdio.h>
 int main(void)
 {
-	char b[] = "HELLO WORLD! expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+	char b[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
 	char *ptr;
-	ptr = cap_string(b);
+	ptr = leet(b);
 	printf("%s", b);
 	printf("%s", ptr);
 	return (0);
