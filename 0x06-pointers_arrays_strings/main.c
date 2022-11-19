@@ -2,9 +2,10 @@
 #include <stdio.h>
 int main(void)
 {
-	int i = 0;
-	int b[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-	reverse_array(b, sizeof(b) / sizeof(int));
-	printf("%d ", b[i++]);
+	char b[] = "Look up!";
+	char *ptr;
+	ptr = string_toupper(b);
+	printf("%s\n", b);
+	printf("%s", ptr);
 	return (0);
 }
