@@ -2,9 +2,9 @@
 #include <stdio.h>
 int main(void)
 {
-	char b[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
+	char b[] = "ROT13 (\"rotate by 13 places\", sometimes hyphenated ROT-13) is a simple letter substitution cipher.\n";
 	char *ptr;
-	ptr = leet(b);
+	ptr = rot13(b);
 	printf("%s", b);
 	printf("%s", ptr);
 	return (0);
