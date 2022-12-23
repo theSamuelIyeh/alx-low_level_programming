@@ -20,6 +20,11 @@ list_t *add_node(list_t **head, const char *str)
 	if (head == NULL)
 	{
 		ptr = malloc(sizeof(list_t));
+		if (ptr == NULL)
+		{
+			printf("Error\n");
+			exit(90);
+		}
 		head = &ptr;
 		ptr->str = strdup(str);
 		ptr->len = i;
@@ -27,6 +32,11 @@ list_t *add_node(list_t **head, const char *str)
 		return (ptr);
 	}
 	ptr = malloc(sizeof(list_t));
+	if (ptr == NULL)
+	{
+		printf("Error\n");
+		exit(90);
+	}
 	ptr->str = strdup(str);
 	ptr->len = i;
 	ptr->next = *head;
